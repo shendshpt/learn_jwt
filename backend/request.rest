@@ -1,0 +1,30 @@
+GET http://localhost:3700/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hcyI6MSwibmFtZSI6ImhlbmRyeSIsInVzZXJuYW1lIjoiaGVuZHJ5IiwiZW1haWwiOiJoZW5kcnlAZ21haWwuY29tIiwiaWF0IjoxNjY5MTIyMzM5LCJleHAiOjE2NjkxMjIzNTl9.CajaPoxf7TaBQ_vHdNjAQ8Ik6uXHaPps6BncwhYn5lA
+
+###
+POST  http://localhost:3700/users
+Content-Type: application/json
+
+{
+    "nas": 2,
+    "name": "hendry",
+    "username": "hends",  
+    "email": "hendr2y@gmail.com",
+    "password": "hendry12",
+    "confPassword": "hendry123"
+}
+
+###
+POST  http://localhost:3700/login
+Content-Type: application/json
+
+{
+    "email" : "hendry@gmail.com",
+    "password": "hendry123"
+}
+
+###
+GET http://localhost:3700/token
+
+###
+DELETE http://localhost:3700/logout
